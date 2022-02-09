@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+
+body{
+    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+    background-attachment: fixed;
+    color:#354538;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+}
+a {
+    text-decoration: none !important;
+    color: #354548;
+ }
+ 
+ a:hover {
+     text-decoration: none;
+     color: #000000;
+ }
+
+.app__container{
+    padding-top:50px;
+}
+.app__row{
+    height: 86vh;
+}
+
+.app__main-content{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 15px;
+    }
+
+
+  /*------------------ Sidebar ---------------------*/
+
+ .sidebar{
+    background-color: #fff;
+    height: 100%;
+    border-radius: 20px;
+    padding: 3px 15px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    position: relative;
+
+   }
+
+.sidebar__avatar{
+    height: 110px;
+    width: 120px;
+    object-fit: contain;
+    border-radius: 30px;
+   }
+
+.sidebar__icon{
+    width: 25px;
+    height: 25px;
+  }
+
+.sidebar__name{
+    font-family: 'Kaushan Script' ;
+    margin: 20px 0px;
+    font-size: 1.7 rem;
+   }
+
+.sidebar__name>span{
+    color: #00F260;
+    }
+
+ .sidebar__item{
+     margin-bottom: 6px;
+     padding-top: 6px;
+     height: 40px;
+     font-size: 1.07rem;
+    
+    }
+
+ .sidebar__title{
+     background-color: #f1f1f1;
+     border-radius: 30px;
+    }
+
+ .sidebar_contact{
+    background-color: #dbdbdb;
+    padding: 2px 0;
+    margin: 20px -15px;
+   }
+
+ .sidebar__email{
+    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+     border-radius: 30px;
+     color: #fff;
+     margin: 15px 25px;
+     cursor: pointer;
+     transition: all 3s linear;
+     text-align: center !important;
+   }
+
+ .sidebar__email:hover {
+      transition: scale(1.2) !important;
+   }
+
+   .sidebar__resume:hover,
+   .sidebar__github:hover{
+          
+            background-color: #f1f1f2;
+            color: #000;
+            border-radius: 30px;    
+       }
+
+       @media(max-width:991px){
+
+           .app__main-content{
+               margin: 30px 0;
+           }
+       }
+
+ /*------------ Navbar section ----------------*/
+
+ .navbar__items{
+     display: flex;
+ }
+.navbar__active{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #354358;
+    border-bottom: 4px solid #00F260;
+}
+.navbar__item{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #354358;
+    font-size: 1.3rem;
+    cursor:pointer;
+}
+
+.navbar__item:hover{
+    background: -webkit-linear-gradient(#00F260, #0575E6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+ /*---------------- About section ------------------*/
+
+ .about{
+    padding: 24px;
+    margin: -35px;
+   }
+
+ .about__intro{
+     font-size: 1rem;
+     padding: 20px 28px;
+     margin: 10px 0;
+ }
+ .about__container{
+     background-color: #dbdbdb;
+     padding:30px 20px;
+     margin-top: -10px;
+     border-radius: 20px;
+ }
+ .about__heading{
+     font-size: 25px;
+     font-weight: 700;
+     color: #354358;
+     margin-left: 10px;
+  }
+ .skill-card{
+     background-color: #fff;
+     margin: 10px;
+     padding: 10px;
+     display: flex;
+     flex-direction:row;
+     border-radius: 10px;
+ }
+
+ .skill-card_icon{
+     width: 40px;
+     height: 40px;
+     
+ }
+ .skill-card-body{
+     margin-left: 15px;
+ }
+ .skill_card__content{
+     margin: 0;
+     font-size: 0.9rem;
+     color: #6e7e91;
+ }
+
+ /*---------------- resume ----------------------*/
+
+.resume{
+    padding-top: 20px;
+} 
+
+.resume-card__heading,
+.resume-language__heading{
+    margin-left: 0px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #354538;
+}
+
+.resume-card__body{
+    margin-top: 10px;
+}
+.resume-card__titile{
+    font-weight: 700;
+}
+.resume-card__details{
+   font-size: 0.9rem;
+   padding-top: 5px;
+}
+.resume-card__name{
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+ /*-------------- bar -----------------*/
+
+ .bar {
+     width: 90%;
+     background-color: #f1f2f3;
+     border-radius: 20px;
+     margin-bottom: 12px;
+ }
+
+ .bar__icon{
+        width: 15px;
+        height: 15px;
+     }
+
+ .bar__wrapper {
+    background-image: linear-gradient(90deg, #00F260, #0575E6);
+    border-radius: 20px;
+    padding: 0px 14px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+/* Projects */
+
+.projects{
+   height: 70vh;
+   padding: top 30px;
+   overflow-y: auto ;
+  }
+
+  .projectCard__wrapper{
+      margin:10px 0;
+      width: 100%;
+      height: 100%;
+      min-height: 160px;
+  }
+  .projectCard__image{
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    border: 3px solid #00f260;
+    transition: transform 0.3s linear;
+  }
+  .projectCard__image:hover{
+   transform: scale(1.05);
+
+  }
+  .projectCard__icon{
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+  }
+  .projectCard__title{
+      margin-top: 12px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .projects__navbar{
+      display: flex;
+      margin-bottom: 5px;
+  }
+
+  .projects__navbar>div {
+      margin: 0 5px;
+      font-size: 1 rem;
+      cursor: pointer;
+  }
+  .projects__navbar-active{
+      color: #00f260;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .navbar__active {
+        padding-right: 10px ;
+    }
+    .resume-card__heading {
+        margin-left: 0px;
+    }
+    .bar__wrapper{
+        padding: 4px 8px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .resume-card__heading{
+        margin-left: 0px;
+        }
+  }
+
+  @media only screen and (max-width: 992px) {
+  
+    .resume-card__heading, .resume-language__heading{
+        margin-left: 0px;
+        }
+    }
+
+  @media (max-width: 600px){
+
+
+    .app__main-content{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .navbar__active{
+        font-size: 1.5 rem;
+    }
+    .navbar__item {
+        font-size: 1 rem;
+    }
+  }
